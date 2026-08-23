@@ -199,40 +199,45 @@ textarea {
 }
 
 /* ================= FOOTER ================= */
-
 footer {
     text-align: center;
-    padding: 80px;
+    padding: 40px 20px;
     background-color: aqua;
 }
 
 footer p {
-    text-align: left;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 footer a {
+    display: inline-block;
     text-decoration: none;
     color: #000;
-    gap: 10px;
     background-color: antiquewhite;
     border-radius: 7px;
-    padding: 10px;
+    padding: 10px 15px;
+    margin: 5px;
 }
 
-/* ================= TABLET ================= */
-
-@media (max-width: 900px) {
-
-    .projects-container {
-        grid-template-columns: repeat(2, 1fr);
+/* Mobile devices */
+@media (max-width: 600px) {
+    footer {
+        padding: 30px 10px;
     }
 
-    .profile-card {
-        width: 90%;
+    footer p {
+        font-size: 14px;
+    }
+
+    footer a {
+        display: block;
+        width: 80%;
+        margin: 8px auto;
     }
 }
 
-/* ================= MOBILE ================= */
+/*  MOBILE  */
 
 @media (max-width: 600px) {
 
@@ -297,6 +302,4 @@ footer a {
     section {
         padding: 30px 20px;
     }
-
-
 }
