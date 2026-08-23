@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+/* ================= PROFILE ================= */
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 5%;
+    position: relative;
+    overflow: hidden;
+    color: #000;
+}
+
+.profile::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('background_image.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-color: blue;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-text {
+    max-width: 500px;
+    font-size: large;
+    font-weight:bold ;
+    color: rgb(0, 0, 0);
+}
+
+/* ================= NAVIGATION ================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ================= PROFILE CARD ================= */
+
+.profile-card {
+    width: 90%;
+    max-width: 900px;
+    min-height: 300px;
+    margin: 30px auto;
+
+    display: flex;
+
+    background-color: #f5f5f5;
+    border-radius: 30px;
+    overflow: hidden;
+
+    box-shadow: 5px 5px 15px gray;
+    transition: 0.2s;
+}
+
+.profile-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* ================= IMAGE SIDE ================= */
+
+.profile-image1 {
+    width: 40%;
+}
+
+.profile-image1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ================= TEXT SIDE ================= */
+
+.profile-content {
+    width: 60%;
+    padding: 50px 30px;
+}
+
+.profile-content h2 {
+    margin-bottom: 15px;
+}
+
+.profile-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ================= SECTIONS ================= */
+section {
+    min-height: 300px;
+    padding: 40px 5%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* ================= SKILLS ================= */
+
+.skills-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* ================= PROJECTS ================= */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* ================= CONTACT ================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input{
+    padding: 8px;
+}
+
+button {
+    color: aqua;
+    background-color: blue;
+    color: #000;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+textarea{
+    padding: 20px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .profile-card {
+        width: 90%;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    /* Profile */
+    .profile {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .profile-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Navigation */
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Profile Card */
+    .profile-card {
+        width: 90%;
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    /* Image */
+    .profile-image1 {
+        width: 100%;
+        height: 200px;
+    }
+
+    .profile-image1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Text */
+    .profile-content {
+        width: 100%;
+        padding: 25px 20px;
+        text-align: center;
+    }
+
+    .profile-content p {
+        font-size: 16px;
+    }
+
+    /* Skills */
+    .skills-container {
+        flex-direction: column;
+    }
+
+    /* Projects */
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Sections */
+    section {
+        padding: 30px 20px;
+    }
+
+
+}
