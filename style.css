@@ -13,7 +13,8 @@ body {
 /* ================= HEADER ================= */
 
 header {
-    background-color: aquamarine;
+    background: #0f172a;
+    color: white;
     text-align: center;
 }
 
@@ -34,7 +35,7 @@ header {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url('background-image.jpg');
+    background-image: url('background1.jpg');
     background-size: cover;
     background-position: center;
     background-color: blue;
@@ -63,7 +64,8 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    background-color: aquamarine;
+    background: #0f172a;
+    color: white;
     padding: 10px;
 }
 
@@ -71,7 +73,7 @@ nav a {
     border-radius: 10px;
     display: inline-block;
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
     transition: 0.2s;
 }
 
@@ -501,7 +503,7 @@ textarea {
 footer {
     text-align: center;
     padding: 40px 20px;
-    background-color: aqua;
+    background-color: rgb(63, 152, 215);
 }
 
 footer p {
