@@ -10,54 +10,200 @@ body {
     font-family: "Poppins", Arial, sans-serif;
 }
 
-/* ================= HEADER ================= */
+/*  HERO SECTION  */
 
-header {
-    background: #0f172a;
-    color: white;
-    text-align: center;
-}
+.hero {
+    min-height: 550px;
+    padding: 70px 8%;
 
-/* ================= PROFILE ================= */
-
-.profile {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
-    padding: 30px 5%;
-    position: relative;
-    overflow: hidden;
-    color: #000;
+
+    gap: 80px;
+
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+
+    color: white;
 }
 
-.profile::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url('background1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-color: blue;
-    opacity: 0.7;
-    z-index: -1;
-}
 
-.profile-image img {
-    width: 200px;
-    height: 200px;
+/*  HERO IMAGE  */
+
+.hero-image {
+    width: 320px;
+    height: 320px;
+
+    flex-shrink: 0;
+
     border-radius: 50%;
+
+    padding: 8px;
+
+    background: white;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
     object-fit: cover;
+
+    border-radius: 50%;
+
+    display: block;
 }
 
-.profile-text {
-    max-width: 500px;
-    font-size: large;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
+
+/* HERO CONTENT  */
+
+.hero-content {
+    max-width: 650px;
 }
 
-/* ================= NAVIGATION ================= */
+.hero-greeting {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    margin-bottom: 8px;
+}
+
+.hero h2 {
+    font-size: 27px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 17px;
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+
+    opacity: 0.9;
+}
+
+
+/*  BUTTONS  */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.hero-btn {
+    text-decoration: none;
+
+    padding: 12px 25px;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background-color: white;
+    color: #667eea;
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+}
+
+.secondary-btn {
+    border: 2px solid white;
+    color: white;
+}
+
+.secondary-btn:hover {
+    background-color: white;
+    color: #667eea;
+}
+
+
+/*  SKILL TAGS  */
+
+.hero-skills {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 30px;
+}
+
+.hero-skills span {
+    padding: 7px 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    border-radius: 20px;
+
+    font-size: 14px;
+}
+
+
+/*  MOBILE  */
+
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 40px;
+
+        padding: 60px 5%;
+    }
+
+    .hero-image {
+        width: 230px;
+        height: 230px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-btn {
+        width: 220px;
+        text-align: center;
+    }
+
+    .hero-skills {
+        justify-content: center;
+    }
+}
+
+/*  NAVIGATION  */
 
 nav {
     display: flex;
