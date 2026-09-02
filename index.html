@@ -448,20 +448,176 @@
         </div>
 
     </section>
+<!-- ================= CONTACT ================= -->
 
-    <!-- Contact -->
-    <section id="contact">
-        <h2>Contact Me</h2>
+<section id="contact" class="contact">
 
-        <form onsubmit="alert('Message sent successfully!'); return false;">
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Your Message"></textarea>
-            <span>
-                <button type="submit">Send</button>
-            </span>
-        </form>
-    </section>
+    <div class="contact-container">
+
+        <!-- Section Heading -->
+        <div class="contact-heading">
+            <h2>Contact Me</h2>
+
+            <p>
+                Have a question, project idea, or just want to say hello?
+                Feel free to get in touch with me.
+            </p>
+        </div>
+
+
+        <div class="contact-content">
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+
+                <h3>Let's Talk</h3>
+
+                <p class="contact-text">
+                    I am always interested in learning new things,
+                    working on interesting projects and connecting
+                    with new people.
+                </p>
+
+
+                <!-- Email -->
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+
+                    <div>
+                        <h4>Email</h4>
+                        <a href="mailto:anuraggupta.nep@gmail.com">
+                            anuraggupta.nep@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Location -->
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+
+                    <div>
+                        <h4>Location</h4>
+                        <p>Nepal</p>
+                    </div>
+                </div>
+
+
+                <!-- Education -->
+                <div class="contact-item">
+                    <div class="contact-icon">🎓</div>
+
+                    <div>
+                        <h4>Education</h4>
+                        <p>BCA Student</p>
+                    </div>
+                </div>
+
+
+                <!-- Social Links -->
+                <div class="contact-social">
+
+                    <h4>Connect With Me</h4>
+
+                    <div class="social-links">
+
+                        <a href="https://github.com/Anurag12-Nep"
+                           target="_blank">
+                            GitHub
+                        </a>
+
+                        <a href="https://www.facebook.com/anurag.gupta.210297"
+                           target="_blank">
+                            Facebook
+                        </a>
+
+                        <a href="https://www.instagram.com/iam_anurag12/"
+                           target="_blank">
+                            Instagram
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact Form -->
+            <div class="contact-form-box">
+
+                <h3>Send Me a Message</h3>
+
+                <form onsubmit="alert('Message sent successfully!'); return false;">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Enter your name"
+                                required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter your email"
+                                required>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subject">Subject</label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            placeholder="Enter subject"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">Message</label>
+
+                        <textarea
+                            id="message"
+                            rows="6"
+                            placeholder="Write your message here..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="send-btn">
+                        Send Message
+                        <span>➜</span>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+```
+
 
     <!-- Footer -->
     <!-- ================= FOOTER ================= -->
@@ -530,7 +686,7 @@
             </p>
 
             <p>
-                Made with ❤️ using HTML & CSS
+                Made using HTML & CSS
             </p>
 
         </div>
