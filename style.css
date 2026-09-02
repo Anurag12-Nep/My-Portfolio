@@ -22,11 +22,9 @@ body {
 
     gap: 80px;
 
-    background: linear-gradient(
-        135deg,
-        #667eea,
-        #764ba2
-    );
+    background: linear-gradient(135deg,
+            #667eea,
+            #764ba2);
 
     color: white;
 }
@@ -248,7 +246,7 @@ nav a:hover {
         padding: 10px;
         margin: 20px auto;
         flex-direction: column;
-        
+
     }
 }
 
@@ -306,6 +304,7 @@ section {
     border-radius: 10px;
     text-align: center;
 }
+
 /* ================= EDUCATION ================= */
 
 .education {
@@ -479,6 +478,7 @@ section {
         font-size: 14px;
     }
 }
+
 /* ================= SKILLS ================= */
 
 .skills {
@@ -777,6 +777,7 @@ section {
     }
 
 }
+
 /* ================= CONTACT ================= */
 
 form {
@@ -871,6 +872,7 @@ textarea {
         padding: 30px 20px;
     }
 }
+
 /* ================= FOOTER ================= */
 
 .footer {
