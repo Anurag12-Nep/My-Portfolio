@@ -1270,11 +1270,9 @@ nav a:hover {
 }
 
 
-/* =========================================================
-   TABLET
-========================================================= */
+/*  TABLET  */
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
 
     /* Navigation */
 
@@ -1284,8 +1282,7 @@ nav a:hover {
 
     nav a {
         font-size: 14px;
-
-        padding: 7px 9px;
+        padding: 6px 6px;
     }
 
 
@@ -1322,7 +1319,6 @@ nav a:hover {
 
     .contact-content {
         grid-template-columns: 1fr 1fr;
-
         gap: 25px;
     }
 
@@ -1340,9 +1336,7 @@ nav a:hover {
 }
 
 
-/* =========================================================
-   MOBILE - 768px
-========================================================= */
+/*    MOBILE - 768px */
 
 @media (max-width: 768px) {
 
@@ -1352,21 +1346,14 @@ nav a:hover {
 
     nav {
         justify-content: flex-start;
-
         gap: 5px;
-
-        padding: 7px 8px;
-
+        padding: 6px 8px;
         overflow-x: auto;
-
         white-space: nowrap;
     }
 
     nav a {
-        flex-shrink: 0;
-
         padding: 7px 9px;
-
         font-size: 13px;
     }
 
